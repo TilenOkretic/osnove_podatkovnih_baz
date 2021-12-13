@@ -86,3 +86,8 @@
 * v SUPB skusamo zagotoviti atomarnost in durabilnost
 
 ---
+
+### Enostavna prekinitev trasakcije
+* ne pomeni zdruzitev sistema
+* zelimo zavrteti zgodovino nazaj
+* 
