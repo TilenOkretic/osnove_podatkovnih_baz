@@ -69,3 +69,64 @@
 * Stik
 * Unija
 * Razlika
+
+## Ocena prebranih blokov
+* *poglej na slajde*
+
+## Ocena za plane nad vecimi relacijami
+* *poglej na slajde*
+
+## Ekvivalence operacij RA
+* omogocajo nastevanje ekvivalentnih zapisov izrazov RA
+* ko imamo izraz iscemo vse mozne alogoritme, ki jih lahko uporabimo
+* **Komutativnost in razcep selekcije**
+* **Razcep projekcije**
+* **Asociativnost in komutativnost stika**
+* spuscanje selekcije/projekcije preko stikov proti listom
+* projekcija je komutativna z selekcijo
+  
+## Plan 1 (brez indexov)
+* **Osnovna razlika**: spusti selekcije
+* Cena je veliko bolj vgodna 
+
+## Plan 2 (z indexi)
+* *poglej na slajde*
+
+## Definiocija problema optimizacije
+* Nastevanje ekvivalentnih poizvedb z uporabo pravil relacijske algebre
+* Za vsako operacijo izberemo optimalen algoritem
+* Dinamicno programiranje ~> problem razdelimo na podprobleme
+* Ocenitvena funkcija
+## Poenostavitev problema 
+* Fizicna optimizacija
+* Vozlisce z metodo dostopna
+* Vozlisce s stikom
+## Prostor resitev
+* Prostor ekvivalncih poizved
+* Lastnosti relacijse algebre omogocajo transformacije poizvedbe
+  
+## Iskanje optimalnega plana
+* Prostor je prevelik in se ga pogosto omeji
+* od algoritma za preiskovanje odisi kateri del prostora pregledamo
+
+## Nastevanje alternativnih planov
+* *poglej na slajde*
+
+## Dostopne poti brez indexov
+* pregled vseh zapisov table
+* rezultat selekcije in projekcije se nato uredi v skladu z atributi operacije GROUP BY
+
+## Plani izvajanja z indexi
+* dostop z enim indexom
+    - izberemo tak index ki zahteva manj I/O branj
+* dostop z vecimi indexi
+* *poglej na slajde*
+
+## Nastevanje levo-usmirjenih planov
+* nastevanje z N prehodi za N relacij
+### Prehod 1   
+  * nastevamo vse plane z eno relacijo iz FORM dela SELECT staavka
+  * za dane pogoje je potrebno poiskati optimalno dostopno pot
+### Prehod 2
+  * Nastevamo vse plane z dvemi relacijami
+  *
