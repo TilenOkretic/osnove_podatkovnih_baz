@@ -26,13 +26,13 @@
 
 ---
 
-### Kontrola vzporednosti~KV brez zaklepanjania
+### Kontrola vzporednosti ~ KV brez zaklepanjania
 * KV s casovnimi znackami (Timestamp CC)
 * Multiverzijska KV s casovnimi znackami (Multiversion Timestamp CC)
 
 ---
 
-### Optimisticna Kontrola Vzporednosti~KV
+### Optimisticna Kontrola Vzporednosti ~ KV
 * izvedemo trasnakcijo na kopijah:
   * vsako stran preberemo in naredimo lokalno kopijo
   * preverimo ce se kdo dostopa na transakcijo
@@ -59,4 +59,30 @@
 
 ---
 
+### Kontrola Vzporednost ~ KV s casovnimi zigi
+* Vsakemu objektu priredimo bralni casovni zig (RTS) in pisalni casovni zig (WTS)
+* Algoritem:
+  * prvo se zgodi starejsa transakcija
 
+---
+
+### Multiverzijska kontrola vzporednostics
+* Vsaka transakcija se klasificira kot bralec ali pisalec
+
+---
+
+# Obnovitev po zdruzitvi
+* po crash-u
+* kako obnovimo podatkovno bazo
+* prekinitve transakcije
+
+---
+
+### Pregled ACID lastnosti:
+* **A**tomicity ~ atomarnost ~ transakcija se lahko prekine
+* **C**onsistency
+* **I**solation
+* **D**urability
+* v SUPB skusamo zagotoviti atomarnost in durabilnost
+
+---
